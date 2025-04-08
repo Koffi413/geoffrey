@@ -1,0 +1,76 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-size: medium;
+}
+@font-face {
+    font-family: 'URW Geometric';
+    src: url('../Fonts/urw-geometric-cufonfonts/URWGeometricRegular.otf');
+}
+@font-face {
+    font-family: 'URW Geometric Bold';
+    src: url('../Fonts/urw-geometric-cufonfonts/URWGeometricExtraBold.otf');
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../Fonts/helvetica-now-text/HelveticaNowText-ExtraBold.eot');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lota';
+    src: url('../Fonts/lota-grotesque-alt-1/Los\ Andes\ \ Lota\ Grotesque\ Alt\ 1\ Regular.otf');
+}
+
+@font-face {
+    font-family: 'Swiss';
+    src: url('../Fonts/swiss/Swiss\ 721\ Thin\ BT.ttf');
+}
+.span-swiss{
+    font-family: 'Swiss', sans-serif;
+    font-size: 20px;
+}
+.span-bold-large{
+    font-family: 'Lota', sans-serif;
+    font-size: 16px;
+}
+.span-bold{
+    font-family: 'URW Geometric Bold', sans-serif;
+    font-size: 20px;
+}
+.span-urw-light{
+    font-family: 'URW Geometric', sans-serif;
+    font-size: 15px;
+}
+.popins{
+    font-family: 'Popins', sans-serif;
+    font-size: 20px;
+}
+
+.myimg{
+    max-width: 50%;
+    border: 0;    
+}
+.rubrique{
+    height: 500px;
+    width: 500px;
+}
+#suivant:hover:not([disabled]){
+    cursor: pointer;
+}
+#suivant:disabled{
+    cursor: no-drop;
+}
+/*
+.espace-vide{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+*/

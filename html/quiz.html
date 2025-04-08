@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnSavoirPlus</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-add-96.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Header_footer.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../scss/couleur-perso.css">
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header class="navbar navbar-expand-md  shadow " id="top">
+        <div class="container me-lg-5">
+            <a class="navbar-brand" href="accueil.html"><span class="h2 span-bold ">EnSavoirPlus</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-5 ps-lg-5 me-lg-auto me-3">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark ms-lg-5 ps-lg-3" aria-current="page" href="accueil.html"><i
+                                class="bi bi-house "></i> <span class="span-bold-large ">Accueil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="geo.html"><i class="bi bi-book "></i>
+                            <span class="span-bold-large text-nowrap ">Geoffrey
+                                Hinton</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="oeuvre.html"><i class="bi bi-trophy "></i> <span
+                                class=" span-bold-large ">Oeuvre</span></a>
+                    </li>
+
+                </ul>
+                <!--Button jeu quiz et personnalisation du style de base de bootstrap-->
+                <div class=" justify-content-md-end text-nowrap">
+                    <button class="btn btn-color-var rounded-5 btn-jeu"
+                        style="box-shadow: 0px 2px 10px 0px #ff4612; --bs-btn-active-color: white;--bs-btn-active-bg: #ff4512ba;"><span
+                            class="span-bold-large fw-bold px-2 text-white">Jeu Quiz</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid  pt-5">
+        <section class="row d-flex justify-content-evenly mx-auto pb-5  mb-5">
+            <article class="col-7 bg-color-second shadow mb-5 rounded-3">
+                <div class="p-1 my-3">
+                    <div id="quiz" class="row" style="display: none;">
+                        <div class="col  d-flex">
+                            <div class="w-100 text-center">
+                                <a id="sortie" class=" icon-link icon-link-hover text-end mb-4" style="cursor: pointer;display: none">Quitter </a>
+                                <span class="span-urw-light fs-4 fw-bold mb-4 " id="titre">Questions </span>
+                            </div>
+                        </div>
+                        <span id="questions"
+                            class=" span-urw-light fw-bold text-nowrap fs-5 text-center d-flex justify-content-center"></span>
+                    </div>
+                    <div id="reponses" class="row mt-3 col-9 mx-auto">
+                    </div>
+                    <div class=" d-flex justify-content-md-center ">
+                        <button id="suivant" style="display: none;" class="btn btn-suivant shadow rounded-2 my-4"
+                            style=" --bs-btn-active-color: #20A339;--bs-btn-active-bg:#39b850;"><span
+                                class="popins fw-medium px-3 text-white ">Suivant </span> <i
+                                class="bi bi-arrow-right text-white"></i>
+                        </button>
+                        <button id="rejouer" style="display: none;" class="btn btn-primary bg-primary mt-4"
+                            style="--bs-btn-active-color: #0d6efd --bs-btn-active-bg: #3b83efd7"><span id="spin"
+                                class="popins fw-medium px-3 text-white">Rejouer</span> <i id="fleche"
+                                class="bi bi-arrow-counterclockwise text-white"></i>
+                        </button>
+                    </div>
+                    <div id="regle" style="display: block;">
+                        <p class="text-center"><span class="span-swiss fs-4 fw-bold ">Jeu Quiz</span></p>
+                        <ul class="span-urw-light ">
+                            <li>Le quizz sera sous forme de questions à choix multiples,
+                                avec 20 Questions et 04 propositions à chaque question.</li>
+                            <li>vous devrez sélectionner la case de la bonne réponse dans un délai de
+                                30 secondes pour marquer 01 point.</li>
+                            <div class="text-center fw-bold lh-1 fs-5 pb-0">En cas de mauvais choix</div>
+                            <li>Après votre choix, la bonne réponse sera encadrée en vert et la
+                                mauvaise réponse en rouge, il n’aura pas de points accordés, et
+                                l’apparition du bouton
+                                <span class="fw-bold">"Suivant"</span> pour
+                                aller à la prochaine question.
+                            </li>
+                            <div class="text-center fw-bold fs-5 lh-1">En cas de bon choix</div>
+                            <li>Après votre choix seule cette bonne réponse sera encadrée en vert, il
+                                lui sera accordé 01 point et l’apparition du bouton <span
+                                    class="fw-bold">"Suivant"</span>
+                                pour aller à la prochaine question.</li>
+                            <li>À la fin du quiz il aura le score de bonne réponse affiché qui sera sur 20 points.
+                            </li>
+                        </ul>
+                        <div class=" d-flex justify-content-center text-nowrap ">
+                            <button id="commencer" class="btn btn-custom-color rounded-2"
+                                style="box-shadow: 0px 2px 10px 0px #0d6efd; --bs-btn-active-color: white;"><span
+                                    class="span-bold-large fw-bold px-4 text-white">C'est parti</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class=" col-3 mb-5 d-flex align-items-start flex-column mb-3 justify-content-evenly ">
+                <div id="compteur" class="progress-bar  row mx-auto fs-3 span-urw-light fw-bold">
+                </div>
+                <div  class="span-urw-light fw-bold fs-3 mx-auto">
+                    Temps restant
+                </div>
+            </article>
+        </section>
+        <section class="row m-5" style="visibility: hidden;">
+            vide simple
+        </section>
+        <section class="row m-5" style="visibility: hidden;">
+            vide simple
+        </section>
+        <footer class="row bg-color-second pt-5 mt-4">
+            <div class="col">
+                <p><span class="span-bold display-5">EnSavoirPlus</span></p>
+            </div>
+            <div class="col">
+                <p><span class="span-bold display-5">Laissez un avis</span></p>
+            </div>
+            <article class="mx-auto row m-5">
+                <div class="col py-3">
+                    <div class="col">
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="accueil.html"><span class="span-bold-large fs-4 ">Accueil</span></a></p>
+                        <p> <a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="geo.html"><span class="span-bold-large fs-4">Geoffrey Hinton</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="oeuvre.html"><span class="span-bold-large fs-4">Oeuvre</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="#top"><span class="span-bold-large fs-4">Jeu Quiz</span></a></p>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label span-swiss fw-semibold">Adresse
+                                Mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="adressemail@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label span-swiss fw-semibold">Dites ce
+                                que vous en pensez</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Merci pour avoir donner votre avis"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <button class="btn btn-vert-variant shadow"
+                                style="--bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #009196b8;"
+                                type="submit"> Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="row border-top mt-5">
+                <p class="text-center text-body-secondary">&copy; 2024 Koffi cyriaque</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../javascript/monjs.js"></script>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

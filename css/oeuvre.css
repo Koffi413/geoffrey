@@ -1,0 +1,86 @@
+.text{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 70%;
+    font-size: 30px;
+}
+.text p{
+    font-size: 25px;
+}
+.trait{
+    width: 20px;
+    margin: 0;
+    border: 2px solid red;
+    border-radius: 2px 2px;
+}
+h1{
+    margin:0px;
+    font-size: 50px;
+}
+.oeuvre{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.carte{
+    margin-top: 250px;
+    width: 300px;
+    height: max-content;
+    box-shadow: 4px 4px 4px #012b32;
+    display: inline-block;
+    justify-content: center;
+}
+.description{
+    width: 100%;   
+    font-family: "Playwrite GB S", cursive;
+}
+.img1{
+    padding: 5px;
+}
+img{
+    width: 200px;
+}
+.resume{
+    margin: 30px;
+    font-family: "Playwrite GB S", cursive;
+}
+.resume h1{
+    text-align: center;
+}
+.resume div{
+    font-size: 20px;
+    padding: 18px;
+}
+p{
+    text-align: left;
+    font-size: 15px;
+
+}
+.cont{
+    padding: 5px;
+}
+.lire{
+    text-align: center;
+}
+.achat{
+    color: #007185;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Playwrite GB S", cursive;
+}
+.achat:hover{
+    text-decoration: underline;
+}
+
+.btn-jeu{
+    animation: btn 7s infinite;
+}
+@keyframes btn{
+    0%, 100% {
+        transform: scale(0.9); 
+    }
+    50% {
+        transform: scale(1); 
+    }
+}

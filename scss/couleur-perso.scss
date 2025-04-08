@@ -1,0 +1,23 @@
+$mycolor: (
+    "custom-color": #0d6efd,
+    "color-second": #f2f2f2,
+    "color-var":#ff4612,
+    "blanc": #ffffff,
+    "vert":#ABC251,
+    "red":#c62d47,
+    "jaune-clair": #fff6e6,
+    "vert-variant": #009096,
+    "violet": #283149,
+    "vio-clair":#E6E7E6,
+    "ciel": #9CE2D7,
+    "suivant": #20A339,
+    "correct": #00b14d,
+    "incorrect": #e10000
+);
+$theme-colors: (
+    "custom-color" : $mycolor
+);
+// Ajouter la couleur directement au thème
+$theme-colors: map-merge($theme-colors, $mycolor);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

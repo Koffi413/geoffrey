@@ -1,0 +1,42 @@
+
+.anime{
+    animation: ani 10s forwards;
+}
+@keyframes ani {
+    0%{
+        translate: 0 -50px;
+    }
+    50%{
+        translate: 0;
+    }
+    100%{
+        translate: 0 -50px;
+    }
+}
+.anima{
+    animation: reveal linear ;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 75%;
+}
+@keyframes reveal {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.btn-jeu{
+    animation: btn 7s infinite;
+}
+@keyframes btn{
+    0%, 100% {
+        transform: scale(0.9); 
+    }
+    50% {
+        transform: scale(1); 
+    }
+}

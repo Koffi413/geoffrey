@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnSavoirPlus</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-add-96.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Header_footer.css">
+    <link rel="stylesheet" href="../css/oeuvre.css">
+    <link rel="stylesheet" href="../scss/couleur-perso.css">
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header class="navbar navbar-expand-md bg-body-tertiary" id="top">
+        <div class="container me-lg-5">
+            <a class="navbar-brand" href="accueil.html"><span class="h2 span-bold">EnSavoirPlus</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-5 ps-lg-5 me-lg-auto me-3 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark ms-lg-5 ps-lg-3" aria-current="page" href="accueil.html"><i class="bi bi-house"></i> <span
+                                class="span-bold-large">Accueil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="geo.html"><i class="bi bi-book"></i> <span
+                                class="span-bold-large text-nowrap">Geoffrey
+                                Hinton</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="oeuvre.html"><i class="bi bi-trophy"></i> <span
+                                class=" span-bold-large">Oeuvre</span></a>
+                    </li>
+
+                </ul>
+                <!--Button jeu quiz et personnalisation du style de base de bootstrap-->
+                <div class=" justify-content-md-end text-nowrap">
+                    <a href="quiz.html" role="button" class="btn btn-jeu btn-color-var rounded-5"
+                        style="box-shadow: 0px 6px 20px 0px #ff4612; --bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #ff4512ba;"><span
+                            class="span-bold-large fw-bold px-2">Jeu Quiz</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="cont">
+            <div class="span-bold text">
+                <h1>Oeuvres </h1>
+                <hr class="trait">
+                <p class="span-bold-large">
+                    Geoffrey Hinton n'a pas écrit de livres en solo. Il est principalement connu pour ses
+                    contributions à
+                    la recherche en intelligence artificielle et au deep learning à travers de nombreux articles
+                    scientifiques. Nous vous montrerons l'oeuvre la plus populaire et quelques références de travaux
+                    auxquels il a contribué.
+                </p>
+            </div>
+            <div class="oeuvre">
+                <div class="carte">
+                    <div class="cont">
+                        <div class="img1">
+                            <img src="../images/oeuvre1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="description">
+                            <p>Unsupervised Learning: Foundations of Neural Computation<br>(Édition en Anglais)</p>
+                            <hr>
+                            <p>Broché - 24 mai 1999 de <strong>Geoffrey Hinton et Terrence J. Sejnowski</strong></p>
+                            <p class="lire">
+                                <a href="https://www.amazon.fr/Unsupervised-Learning-Map-Formation-Computations/dp/026258168X?ref_=ast_author_mpb"
+                                    class="achat">Achetez pour lire</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume">
+                    <h1>Abstract</h1>
+                    <div>
+                        Since its founding in 1989 by Terrence Sejnowski, Neural Computation has become the leading
+                        journal in the field. Foundations of Neural Computation collects, by topic, the most
+                        significant
+                        papers that have appeared in the journal over the past nine years. This volume of
+                        Foundations of
+                        Neural Computation, on unsupervised learning algorithms, focuses on neural network learning
+                        algorithms that do not require an explicit teacher. The goal of unsupervised learning is to
+                        extract an efficient internal representation of the statistical structure implicit in the
+                        inputs. These algorithms provide insights into the development of the cerebral cortex and
+                        implicit learning in humans. They are also of interest to engineers working in areas such as
+                        computer vision and speech recognition who seek efficient representations of raw input data.
+                        <span class="blockquote-footer">Traduit avec DeepL.com</span>
+
+                    </div>
+                    <div class="resume span-swiss">
+                        <h1>Résumé</h1>
+                        <div>
+                            Depuis sa création en 1989 par Terrence Sejnowski, Neural Computation est devenue la
+                            revue de référence dans ce domaine. Foundations of Neural Computation rassemble, par
+                            thème, les articles les plus significatifs parus dans la revue au cours des neuf
+                            dernières années. Ce volume de Foundations of Neural Computation, consacré aux
+                            algorithmes d'apprentissage non supervisé, se concentre sur les algorithmes
+                            d'apprentissage des réseaux neuronaux qui ne nécessitent pas d'enseignant explicite.
+                            L'objectif de l'apprentissage non supervisé est d'extraire une représentation interne
+                            efficace de la structure statistique implicite dans les entrées. Ces algorithmes
+                            permettent de mieux comprendre le développement du cortex cérébral et l'apprentissage
+                            implicite chez l'homme. Ils présentent également un intérêt pour les ingénieurs
+                            travaillant dans des domaines tels que la vision par ordinateur et la reconnaissance
+                            vocale, qui recherchent des représentations efficaces des données d'entrée brutes.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="span-swiss">Références d'articles</h1>
+            <hr class="trait">
+            <div class="référence">
+                <ol class="text-primary">
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:YsMSGLbcyi4C">Hinton,
+                            G.E., Osindero, S., & Teh, Y.W. (2006). "A fast learning algorithm for deep belief
+                            nets." Neural Networks.</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:VN7nJs4JPk0C">Krizhevsky,
+                            A., Sutskever, I., & Hinton, G.E. (2012). "ImageNet classification with deep
+                            convolutional neural networks." Neural Information Processing Systems
+                            (NIPS).</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:WF5omc3nYNoC">Hinton,
+                            G.E., & Salakhutdinov, R.R. (2006). "Reducing the dimensionality of data with neural
+                            networks." Science.</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:C-SEpTPhZ1wC">Hinton,
+                            G.E. (2012). "Deep learning: A technology with the potential to transform health care."
+                            Health Affairs.</a></li>
+                    <li> <a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:jlhcAiayVhoC">Hinton,
+                            G.E., Vinyals, O., & Dean, J. (2015). "Distilling the knowledge in a neural network."
+                            Advances in Neural Information Processing Systems (NIPS).</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&citation_for_view=JicYPdAAAAAJ:Ic1VZgkJnDsC">Hinton,
+                            G.E., et al. (2012). "Dropout: A simple way to prevent neural networks from
+                            overfitting." Journal of Machine Learning Research.</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&cstart=20&pagesize=80&citation_for_view=JicYPdAAAAAJ:ufrVoPGSRksC">Hinton,
+                            G.E. (2006). "The "wake-sleep" algorithm for unsupervised neural networks." Science.</a>
+                    </li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&pagesize=80&citation_for_view=JicYPdAAAAAJ:GFxP56DSvIMC">Hinton,
+                            G.E., Rumelhart, D.E., & Williams, R.J. (1986). "Learning Internal Representations by
+                            Error Propagation."</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&pagesize=80&citation_for_view=JicYPdAAAAAJ:ZeXyd9-uunAC">Maaten,
+                            L.J.P., & Hinton, G.E. (2008). "Visualizing Data using t-SNE."</a></li>
+                    <li><a class="link"
+                            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JicYPdAAAAAJ&pagesize=80&citation_for_view=JicYPdAAAAAJ:W7OEmFMy1HYC">Hinton,
+                            G.E., & Salakhutdinov, R.R. (2009). "Training Products of Experts by Minimizing
+                            Contrastive Divergence."</a></li>
+                </ol>
+            </div>
+        </div>
+            <footer class="row bg-color-second pt-5 mt-4">
+                <div class="col">
+                <p><span class="span-bold display-5">EnSavoirPlus</span></p>
+            </div>
+            <div class="col">
+                <p><span class="span-bold display-5">Laissez un avis</span></p>
+            </div>
+            <article class="mx-auto row m-5">
+                <div class="col py-3">
+                    <div class="col">
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="accueil.html"><span class="span-bold-large fs-4 ">Accueil</span></a></p>
+                        <p> <a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="geo.html"><span class="span-bold-large fs-4">Geoffrey Hinton</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="top"><span class="span-bold-large fs-4">Oeuvre</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="quiz.html"><span class="span-bold-large fs-4">Jeu Quiz</span></a></p>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label span-swiss fw-semibold">Adresse
+                                Mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="adressemail@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label span-swiss fw-semibold">Dites ce
+                                que vous en pensez</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Merci pour avoir donner votre avis"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <button class="btn btn-vert-variant shadow"
+                                style="--bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #009196b8;"
+                                type="submit"> Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="row border-top mt-5">
+                <p class="text-center text-body-secondary">&copy; 2024 Koffi cyriaque</p>
+            </div>
+        </footer>
+    </div>
+    <div class="contenu-page">
+        
+    </div>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

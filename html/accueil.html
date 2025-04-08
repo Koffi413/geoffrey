@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnSavoirPlus</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-add-96.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/accueil.css">
+    <link rel="stylesheet" href="../css/Header_footer.css">
+    <link rel="stylesheet" href="../scss/couleur-perso.css">
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header class="navbar navbar-expand-md bg-body-tertiary sticky-top" id="top">
+        <div class="container me-lg-5 ">
+            <a class="navbar-brand" href="accueil.html"><span class="h2 span-bold border">EnSavoirPlus</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-5 ps-lg-5 me-lg-auto me-3 ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark ms-lg-5 ps-lg-3" aria-current="page" href="accueil.html"><i
+                                class="bi bi-house"></i> <span class="span-bold-large">Accueil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="geo.html"><i class="bi bi-book"></i>
+                            <span class="span-bold-large text-nowrap">Geoffrey
+                                Hinton</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="oeuvre.html"><i class="bi bi-trophy"></i> <span
+                                class=" span-bold-large">Oeuvre</span></a>
+                    </li>
+
+                </ul>
+                <!--Button jeu quiz et personnalisation du style de base de bootstrap-->
+                <div class=" justify-content-md-end text-nowrap ">
+                    <a href="quiz.html" role="button" class="btn btn-jeu btn-color-var rounded-5"
+                        style="box-shadow: 0px 6px 20px 0px #ff4612; --bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #ff4512ba;"><span
+                            class="span-bold-large fw-bold px-2">Jeu Quiz</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Contenu de la page d'accueil-->
+    <section class="container-fluid position-absolute">
+        <section class="row bg-primary anime  ">
+            <div class=" col-sm-12 ">
+                <p class="m-2 text-white text-center"><span>Testez vos connaisances après votre visite avec le jeu
+                        quiz</span></p>
+            </div>
+        </section>
+    </section>
+    <div class="container-fluid">
+        <section class="row bg-black d-flex justify-content-center p-xl-5">
+            <article class="col-xl-7 d-flex justify-content-md-center p-xl-5 row p-sm-5 p-3">
+                <figure class="text-center fs-4 fw-light text-white display-6 pt-md-5 fst-italic">
+                    <blockquote>
+                        <p>À long terme, la recherche fondée sur la curiosité est tout
+                            simplement plus efficace... Les vraies percées sont réalisées par des personnes qui se
+                            concentrent sur ce qui les passionne.
+                        </p>
+                        <p><u>Geoffrey Hinton</u></p>
+                    </blockquote>
+                </figure>
+            </article>
+            <article class="col-xl p-xl-4  row p-sm-2  mb-xl-5 mb-3">
+                <div class="d-flex justify-content-xl-end d-flex justify-content-center"><img class="myimg"
+                        src="../images/Hinton.jpg" alt=""></div>
+            </article>
+        </section>
+        <section class="row bg-color-second p-xl-5">
+            <article class="col p-5">
+                <p><span class="span-swiss display-1 fw-medium">Qui est-ce...?</span></p>
+                <article class="row d-flex p-5 m-4 border bg-blanc rounded-3" style="box-shadow: 0 6px 20px 0 black;">
+                    <div class=" m-3">
+                        <p class="span-bold-large ">
+                            Découvrez la vie fascinante de Geoffrey Hinton, chercheur britannique et pionnier de
+                            l'intelligence artificielle, surnommé le <span class="span-bold">"Parrain du deep
+                                learning"</span>. Ses travaux
+                            révolutionnaires sur les réseaux de neurones ont non seulement redéfini la technologie
+                            moderne, mais aussi jeté les bases des avancées dans des domaines tels que la vision par
+                            ordinateur, la reconnaissance vocale et bien plus encore. Plongez dans le parcours d'un
+                            visionnaire dont l'impact continue de façonner notre monde connecté.
+                            Découvrez l’histoire inspirante de Geoffrey Hinton, ce visionnaire britannique qui a
+                            transformé
+                            l’intelligence artificielle et ouvert la voie à des avancées majeures.
+                        </p>
+                        <div class="d-flex justify-content-start">
+                            <a href="geo.html" role="button" class="btn btn-custom-color rounded-5"
+                                style="box-shadow: 0px 6px 20px 0px #3172AD; --bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #3171adda;"><span
+                                    class="span-bold-large fw-bold px-5">En Savoir +</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <section class="row bg-jaune-clair">
+            <div class=" row">
+                <p class="m-1 text-center"><span class="span-swiss fw-bold fs-1">Rubriques</span></p>
+            </div>
+        </section>
+        <section class="row bg-blanc my-xl-3 ms-5">
+            <article class="col m-sm-3 anima">
+                <article class="card" style="box-shadow: 0 4px 8px 0 #00000041; width: 500px;">
+                    <img src="../images/ia.jpg" class="shadow rounded rubrique">
+                    <div class="card-body">
+                        <h5 class="span-bold card-header text-center">Geoffrey Hinton Parrain de l'IA</h5>
+                        <p class="span-bold-large card-text "> Découvrez l'héritage scientifique de Geoffrey Hinton,
+                            pionnier de l'intelligence artificielle. À travers ses travaux visionnaires, Hinton a jeté
+                            les bases des réseaux de neurones qui révolutionnent aujourd'hui des secteurs allant de la
+                            médecine
+                            à la technologie. Plongez dans cette rubrique pour explorer ses publications, ses
+                            contributions clés, et
+                            l'impact de ses idées sur notre futur technologique.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="oeuvre.html" role="button" class="btn btn-custom-color rounded-5"
+                                style="box-shadow: 0px 6px 20px 0px #3172AD; --bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #3171adda;"><span
+                                    class="span-bold-large fw-bold px-5">Découvrir</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </article>
+            <article class="col m-sm-3 anima">
+                <article class="card" style="box-shadow: 0 4px 8px 0 #00000041; width: 500px;">
+                    <img src="../images/quiz.jpeg" class="shadow rounded rubrique">
+                    <div class="card-body">
+                        <h5 class="span-bold card-header text-center">Mettez vos connaissances à l'épreuve !</h5>
+                        <p class="span-bold-large card-text"> Découvrez l'héritage scientifique de Geoffrey Hinton,
+                            pionnier de
+                            Testez ce que vous avez retenu grâce à notre jeu quiz
+                            interactif. Chaque réponse se cache quelque part sur notre site, dans les articles et
+                            rubriques dédiées. C’est l’occasion parfaite d’apprendre tout en vous amusant et de
+                            découvrir des anecdotes fascinantes sur nos thématiques. Préparez-vous à relever le défi et
+                            à devenir un véritable expert !</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="quiz.html" role="button" class="btn btn-custom-color rounded-5"
+                                style="box-shadow: 0px 6px 20px 0px #3172AD; --bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #3171adda;"><span
+                                    class="span-bold-large fw-bold px-5">Prêt à jouer</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <footer class="row bg-color-second p-5">
+            <div class="col">
+                <p><span class="span-bold display-5">EnSavoirPlus</span></p>
+            </div>
+            <div class="col">
+                <p><span class="span-bold display-5">Laissez un avis</span></p>
+            </div>
+            <article class="mx-auto row m-5">
+                <div class="col py-3">
+                    <div class="col">
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                 href="#top"><span
+                                    class="span-bold-large fs-4 ">Accueil</span></a></p>
+                        <p> <a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="geo.html"><span class="span-bold-large fs-4">Geoffrey Hinton</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="oeuvre.html"><span class="span-bold-large fs-4">Oeuvre</span></a></p>
+                        <p><a class=" link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="quiz.html"><span class="span-bold-large fs-4">Jeu Quiz</span></a></p>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label span-swiss fw-semibold">Adresse
+                                Mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="adressemail@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label span-swiss fw-semibold">Dites ce
+                                que vous en pensez</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Merci pour avoir donner votre avis"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <button class="btn btn-vert-variant shadow"
+                                style="--bs-btn-color: white; --bs-btn-hover-color: white; --bs-btn-active-color: white;--bs-btn-active-bg: #009196b8;"
+                                type="submit"> Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="row border-top mt-5">
+                <p class="text-center text-body-secondary">&copy; 2024 Koffi cyriaque</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
